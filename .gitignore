@@ -1,0 +1,6 @@
+*.o
+*.user
+*~
+*.swap
+build/
+

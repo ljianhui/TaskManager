@@ -1,0 +1,882 @@
+2015/05/02 17:09:22
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:24
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:26
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:28
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:30
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:32
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:34
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:36
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:38
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:40
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:42
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:44
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:46
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:48
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:50
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:52
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:54
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:56
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:09:58
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:00
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:02
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:04
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:06
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:08
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:10
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:12
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:14
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:16
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:18
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:20
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:22
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:24
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:26
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:28
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:30
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:32
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:34
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:36
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:38
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:40
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:42
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:44
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:46
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:48
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:50
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:52
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:54
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:56
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:10:58
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:00
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:02
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:04
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:06
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:08
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:10
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:12
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:14
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:16
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:18
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:20
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:22
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:24
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:26
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:28
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:30
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:32
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:34
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:36
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:38
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:40
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:42
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:44
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:46
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:48
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:50
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:52
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:54
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:56
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:11:58
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:00
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:02
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:04
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:06
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:08
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:10
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:12
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:14
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:16
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:18
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:20
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:22
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:24
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:26
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:28
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:30
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:32
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:34
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+
+2015/05/02 17:12:36
+mounted	device		dir	type	bsize	total	free	usage	
+Yes	/dev/sda7	/	ext4	4K	29.9G	22.0G	26.5%	
+Yes	/dev/sda10	/home	ext4	4K	103.6G	91.7G	11.5%	
+Yes	/dev/sda8	/boot	ext4	1K	231.3M	137.0M	40.8%	
+No	/dev/sda1			1K	60.0G	0B	100.0%	
+No	/dev/sda5			1K	138.0G	0B	100.0%	
+No	/dev/sda6			1K	129.7G	0B	100.0%	
+

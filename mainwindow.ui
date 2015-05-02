@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>586</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>任务管理器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="img.qrc">
+    <normaloff>:/img/toolbox.png</normaloff>:/img/toolbox.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <widget class="QWidget" name="tabBaseInfo">
+       <attribute name="title">
+        <string>基本信息</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabProcessInfo">
+       <attribute name="title">
+        <string>进程管理</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabResources">
+       <attribute name="title">
+        <string>系统资源</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabFileSystemInfo">
+       <attribute name="title">
+        <string>文件系统</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabLog">
+       <attribute name="title">
+        <string>日志选项</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
