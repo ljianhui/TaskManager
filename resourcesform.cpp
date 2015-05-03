@@ -133,8 +133,10 @@ void ResourcesForm::refreshMemoryViews()
     QString strUsedRAM = QString::fromStdString(BytesToString(usedRAM));
     QString strTotalSwap = QString::fromStdString(BytesToString(totalSwap));
     QString strUsedSwap = QString::fromStdString(BytesToString(usedSwap));
+    QString strPageSize = QString::fromStdString(BytesToString(mMemoryInfo->getPageSize()));
     ui->labMemory->setText(strUsedRAM + tr("/") + strTotalRAM);
     ui->labSwap->setText(strUsedSwap + tr("/") + strTotalSwap);
+    ui->labPageSize->setText(strPageSize);
 }
 
 void ResourcesForm::initNetTableView()

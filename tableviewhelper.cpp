@@ -1,5 +1,6 @@
 #include <QTableView>
 #include <QStandardItemModel>
+#include <QTableWidget>
 #include <QHeaderView>
 #include <QStringList>
 #include "tableviewhelper.h"
@@ -22,6 +23,7 @@ void TableViewHelper::setTableViewStyle(QTableView *tbv)
     }
     tbv->setEditTriggers(QAbstractItemView::NoEditTriggers);
     tbv->setSelectionBehavior(QAbstractItemView::SelectRows);
+    tbv->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     tbv->verticalHeader()->hide();
     tbv->setShowGrid(false);
 }

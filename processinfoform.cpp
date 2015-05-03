@@ -23,9 +23,9 @@ ProcessInfoForm::ProcessInfoForm(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ProcessInfoForm),
     mItemModel(),
-    mCurModelIndex(),
     mMenu(NULL),
-    mProcessInfo(NULL)
+    mProcessInfo(NULL),
+    mCurProcess()
 {
     ui->setupUi(this);
 
@@ -48,8 +48,8 @@ ProcessInfoForm::~ProcessInfoForm()
 
 void ProcessInfoForm::initTableView()
 {
-    TableViewHelper::setTableViewStyle(ui->tbvProcesses);
     initTableHeader();
+    TableViewHelper::setTableViewStyle(ui->tbvProcesses);
     ui->tbvProcesses->setContextMenuPolicy(Qt::ActionsContextMenu);
     ui->tbvProcesses->setContextMenuPolicy(Qt::CustomContextMenu);
 }
@@ -63,7 +63,7 @@ void ProcessInfoForm::initTableHeader()
     headerList.append(tr("占用内存"));
     headerList.append(tr("内存占用率"));
     headerList.append(tr("CPU占用率"));
-    headerList.append(tr("所有用户"));
+    headerList.append(tr("所属用户"));
     headerList.append(tr("PRI"));
     headerList.append(tr("Nice"));
     headerList.append(tr("命令行"));
@@ -94,7 +94,7 @@ void ProcessInfoForm::initConnection()
     connect(ui->tbvProcesses, SIGNAL(clicked(QModelIndex)),
             this, SLOT(setCurIndex(QModelIndex)));
     connect(ui->tbvProcesses, SIGNAL(pressed(QModelIndex)),
-            this, SLOT(setCurIndex(QModelIndex)));
+            this, SLOT(setCurProcess(QModelIndex)));
 
     connect(InfoProvider::getInstance(), SIGNAL(resort()),
             this, SLOT(refreshViews()));
@@ -116,7 +116,6 @@ void ProcessInfoForm::refreshTableItems()
     {
         mItemModel.removeRows(processCount, mItemModel.rowCount() - processCount);
     }
-    ui->tbvProcesses->setCurrentIndex(mCurModelIndex);
 }
 
 void ProcessInfoForm::setTableItem(int row, const Process *p)
@@ -208,66 +207,50 @@ QMenu* ProcessInfoForm::getMenu()
 
 void ProcessInfoForm::stopProcess()
 {
-    int row = mCurModelIndex.row();
-    const Process *p = mProcessInfo->getProcess(row);
-    if (p != NULL)
-    {
-        ProcessManager *pm = ProcessManager::getInstance();
-        pm->stop(*p);
-        pm->releaseInstance();
-    }
+    ProcessManager *pm = ProcessManager::getInstance();
+    pm->stop(mCurProcess);
+    pm->releaseInstance();
 }
 
 void ProcessInfoForm::resumeProcess()
 {
-    int row = mCurModelIndex.row();
-    const Process *p = mProcessInfo->getProcess(row);
-    if (p != NULL)
-    {
-        ProcessManager *pm = ProcessManager::getInstance();
-        pm->resume(*p);
-        pm->releaseInstance();
-    }
+    ProcessManager *pm = ProcessManager::getInstance();
+    pm->resume(mCurProcess);
+    pm->releaseInstance();
 }
 
 void ProcessInfoForm::termProcess()
 {
-    int row = mCurModelIndex.row();
-    const Process *p = mProcessInfo->getProcess(row);
-    if (p != NULL)
-    {
-        ProcessManager *pm = ProcessManager::getInstance();
-        pm->terminate(*p);
-        pm->releaseInstance();
-    }
+    ProcessManager *pm = ProcessManager::getInstance();
+    pm->terminate(mCurProcess);
+    pm->releaseInstance();
 }
 
 void ProcessInfoForm::forceStopProcess()
 {
-    int row = mCurModelIndex.row();
-    const Process *p = mProcessInfo->getProcess(row);
-    if (p != NULL)
-    {
-        ProcessManager *pm = ProcessManager::getInstance();
-        pm->forceStop(*p);
-        pm->releaseInstance();
-    }
+    ProcessManager *pm = ProcessManager::getInstance();
+    pm->forceStop(mCurProcess);
+    pm->releaseInstance();
 }
 
 void ProcessInfoForm::setProcessNice()
 {
-    int row = mCurModelIndex.row();
-    const Process *p = mProcessInfo->getProcess(row);
-    if (p != NULL)
-    {
-        PrioritySettingDialog dialog(p);
-        dialog.exec();
-    }
+    PrioritySettingDialog dialog(&mCurProcess);
+    dialog.exec();
 }
 
-void ProcessInfoForm::setCurIndex(QModelIndex index)
+void ProcessInfoForm::setCurProcess(QModelIndex index)
 {
-    mCurModelIndex = index;
+    QReadLocker locker(PublicReadWriteLock::getLock());
+    const Process *p = mProcessInfo->getProcess(index.row());
+    if (p != NULL)
+    {
+        mCurProcess = *p;
+    }
+    else
+    {
+        mCurProcess = Process();
+    }
 }
 
 void ProcessInfoForm::showMenu(QPoint pos)

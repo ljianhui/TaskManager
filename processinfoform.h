@@ -6,12 +6,13 @@
 #include <QPoint>
 #include <QModelIndex>
 
+#include "process.h"
+
 namespace Ui {
 class ProcessInfoForm;
 }
 
 class ProcessInfo;
-class Process;
 class QMenu;
 
 class ProcessInfoForm : public QWidget
@@ -45,15 +46,15 @@ private slots: //slot
     void termProcess();
     void forceStopProcess();
     void setProcessNice();
-    void setCurIndex(QModelIndex index);
+    void setCurProcess(QModelIndex index);
 
 private: // data
     Ui::ProcessInfoForm *ui;
 
     QStandardItemModel mItemModel;
-    QModelIndex mCurModelIndex;
     QMenu *mMenu;
     const ProcessInfo *mProcessInfo;
+    Process mCurProcess;
 };
 
 #endif // PROCESSINFOFORM_H

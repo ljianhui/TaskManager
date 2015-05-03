@@ -32,13 +32,14 @@ void PrioritySettingDialog::initViews()
     if (mProcess != NULL)
     {
         ui->hsNice->setValue(mProcess->getNice());
+        ui->labPid->setText(QString::number(mProcess->getPid())
+            + tr("->") + QString::fromStdString(mProcess->getProcessName()));
+        ui->labNice->setText(QString::number(mProcess->getNice()));
     }
     else
     {
         ui->hsNice->setValue(0);
     }
-    ui->labPid->setText(QString::number(mProcess->getPid()));
-    ui->labNice->setText(QString::number(mProcess->getNice()));
 }
 
 void PrioritySettingDialog::adjustNice(int nice)
@@ -56,4 +57,5 @@ void PrioritySettingDialog::setNice()
     ProcessManager *pm = ProcessManager::getInstance();
     pm->setNice(*mProcess, mNice);
     pm->releaseInstance();
+    close();
 }
