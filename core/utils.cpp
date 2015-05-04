@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
+#include <string.h>
 #include "utils.h"
 
 using std::string;
@@ -56,6 +57,16 @@ string LocalTime()
 		time->tm_year + 1900, time->tm_mon + 1, time->tm_mday,
 		time->tm_hour, time->tm_min, time->tm_sec);
 	return string(buffer);
+}
+
+string TimeToString(time_t time)
+{
+	char *str = ctime(&time);
+	if (str != NULL)
+	{
+		return string(str, strlen(str) - 1);
+	}
+	return string();
 }
 
 string BytesToString(unsigned long long bytes)

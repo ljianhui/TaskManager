@@ -5,6 +5,7 @@
 
 #include "baseinfo.h"
 #include "infoprovider.h"
+#include "utils.h"
 
 BaseInfoForm::BaseInfoForm(QWidget *parent) :
     QWidget(parent),
@@ -36,4 +37,5 @@ void BaseInfoForm::refreshViews()
     ui->labSystemRelease->setText(QString::fromStdString(mBaseInfo->getSystemRelease()));
     ui->labSystemVersion->setText(QString::fromStdString(mBaseInfo->getSystemVersion()));
     ui->labMachineType->setText(QString::fromStdString(mBaseInfo->getMachineType()));
+    ui->labBootTime->setText(QString::fromStdString(TimeToString(BaseInfo::getBootTime())));
 }

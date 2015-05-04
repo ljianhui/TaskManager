@@ -35,35 +35,43 @@ private slots:
     void setFrqForLogWorker(int index);
 
 private: // struct
-    struct SysInfoCheckBox
+    struct CheckBoxHistorys
     {
-        const SystemInfo *sysInfo;
         QVector<QCheckBox*> checkBoxs;
-        QVector<bool> checkedHistorys;
+        QVector<bool> historys;
     };
 
 private: // function
     void registerAllToLog();
+    void registerToLog(bool checked,
+        const SystemInfo *info, const QString &logFileName,
+        const CheckBoxHistorys &checkBoxHistorys);
 
-    void registerToLog(bool checked, const SystemInfo *info,
-        const QString &logFileName);
+    const SystemInfo* getSystemInfo(int index);
 
-    void initBaseInfoCheckBoxs(const SystemInfo *info, int index);
-    void initProcessInfoCheckBoxs(const SystemInfo *info, int index);
-    void initCPUInfoCheckBoxs(const SystemInfo *info, int index);
-    void initMemoryInfoCheckBoxs(const SystemInfo *info, int index);
-    void initNetworkInfoCheckBoxs(const SystemInfo *info, int index);
-    void initFileSystemInfoCheckBoxs(const SystemInfo *info, int index);
+    void initBaseInfoCheckBoxs();
+    void initProcessInfoCheckBoxs();
+    void initCPUInfoCheckBoxs();
+    void initMemoryInfoCheckBoxs();
+    void initNetworkInfoCheckBoxs();
+    void initFileSystemInfoCheckBoxs();
 
-    void initSystemInfoCheckBoxs(const SystemInfo *info, int index,
-        const QVector<QCheckBox*> &checkBoxs);
+    void initCheckedHistory(const QVector<QCheckBox*> &checkBoxs,
+        QVector<bool> &checkedHistorys);
 
     void makeConnection();
 
 private: // data
+    const static int INDEX_BASE_INFO;
+    const static int INDEX_PROCESS_INFO;
+    const static int INDEX_CPU_INFO;
+    const static int INDEX_MEMORY_INFO;
+    const static int INDEX_NETWORK_INFO;
+    const static int INDEX_FILESYSTEM_INFO;
+
     Ui::LogForm *ui;
 
-    QVector<SysInfoCheckBox> mSysInfoCheckBoxs;
+    QVector<CheckBoxHistorys> mCheckBoxHistorysVec;
     LogWorker *mLogWorker;
 };
 

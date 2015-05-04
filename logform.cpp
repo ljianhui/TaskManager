@@ -15,23 +15,29 @@
 #include "networkinfo.h"
 #include "filesysteminfo.h"
 
+const int LogForm::INDEX_BASE_INFO(0);
+const int LogForm::INDEX_PROCESS_INFO(1);
+const int LogForm::INDEX_CPU_INFO(2);
+const int LogForm::INDEX_MEMORY_INFO(3);
+const int LogForm::INDEX_NETWORK_INFO(4);
+const int LogForm::INDEX_FILESYSTEM_INFO(5);
+
 LogForm::LogForm(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::LogForm),
-    mSysInfoCheckBoxs(6),
+    mCheckBoxHistorysVec(6),
     mLogWorker(new LogWorker())
 {
     ui->setupUi(this);
 
-    registerAllToLog();
+    initBaseInfoCheckBoxs();
+    initProcessInfoCheckBoxs();
+    initCPUInfoCheckBoxs();
+    initMemoryInfoCheckBoxs();
+    initNetworkInfoCheckBoxs();
+    initFileSystemInfoCheckBoxs();
 
-    int index = 0;
-    initBaseInfoCheckBoxs(InfoProvider::getInstance()->getBaseInfo(), index++);
-    initProcessInfoCheckBoxs(InfoProvider::getInstance()->getProcessInfo(), index++);
-    initCPUInfoCheckBoxs(InfoProvider::getInstance()->getCPUInfo(), index++);
-    initMemoryInfoCheckBoxs(InfoProvider::getInstance()->getMemoryInfo(), index++);
-    initNetworkInfoCheckBoxs(InfoProvider::getInstance()->getNetworkInfo(), index++);
-    initFileSystemInfoCheckBoxs(InfoProvider::getInstance()->getFileSystemInfo(), index++);
+    registerAllToLog();
 
     makeConnection();
 }
@@ -42,9 +48,10 @@ LogForm::~LogForm()
     delete mLogWorker;
 }
 
-void LogForm::initBaseInfoCheckBoxs(const SystemInfo *info, int index)
+void LogForm::initBaseInfoCheckBoxs()
 {
-    QVector<QCheckBox*> checkBoxs;
+    CheckBoxHistorys &checkBoxHistorys = mCheckBoxHistorysVec[INDEX_BASE_INFO];
+    QVector<QCheckBox*> &checkBoxs = checkBoxHistorys.checkBoxs;
     checkBoxs.append(ui->chbBaseUserName);
     checkBoxs.append(ui->chbBaseUserId);
     checkBoxs.append(ui->chbBaseSystemName);
@@ -53,12 +60,13 @@ void LogForm::initBaseInfoCheckBoxs(const SystemInfo *info, int index)
     checkBoxs.append(ui->chbBaseSystemVersion);
     checkBoxs.append(ui->chbBaseMachineType);
 
-    initSystemInfoCheckBoxs(info, index, checkBoxs);
+    initCheckedHistory(checkBoxs, checkBoxHistorys.historys);
 }
 
-void LogForm::initProcessInfoCheckBoxs(const SystemInfo *info, int index)
+void LogForm::initProcessInfoCheckBoxs()
 {
-    QVector<QCheckBox*> checkBoxs;
+    CheckBoxHistorys &checkBoxHistorys = mCheckBoxHistorysVec[INDEX_PROCESS_INFO];
+    QVector<QCheckBox*> &checkBoxs = checkBoxHistorys.checkBoxs;
     checkBoxs.append(ui->chbProcessPid);
     checkBoxs.append(ui->chbProcessName);
     checkBoxs.append(ui->chbProcessState);
@@ -70,22 +78,24 @@ void LogForm::initProcessInfoCheckBoxs(const SystemInfo *info, int index)
     checkBoxs.append(ui->chbProcessNice);
     checkBoxs.append(ui->chbProcessCmdLine);
 
-    initSystemInfoCheckBoxs(info, index, checkBoxs);
+    initCheckedHistory(checkBoxs, checkBoxHistorys.historys);
 }
 
-void LogForm::initCPUInfoCheckBoxs(const SystemInfo *info, int index)
+void LogForm::initCPUInfoCheckBoxs()
 {
-    QVector<QCheckBox*> checkBoxs;
+    CheckBoxHistorys &checkBoxHistorys = mCheckBoxHistorysVec[INDEX_CPU_INFO];
+    QVector<QCheckBox*> &checkBoxs = checkBoxHistorys.checkBoxs;
     checkBoxs.append(ui->chbCPUCount);
     checkBoxs.append(ui->chbCPUType);
     checkBoxs.append(ui->ChbCPUUsage);
 
-    initSystemInfoCheckBoxs(info, index, checkBoxs);
+    initCheckedHistory(checkBoxs, checkBoxHistorys.historys);
 }
 
-void LogForm::initMemoryInfoCheckBoxs(const SystemInfo *info, int index)
+void LogForm::initMemoryInfoCheckBoxs()
 {
-    QVector<QCheckBox*> checkBoxs;
+    CheckBoxHistorys &checkBoxHistorys = mCheckBoxHistorysVec[INDEX_MEMORY_INFO];
+    QVector<QCheckBox*> &checkBoxs = checkBoxHistorys.checkBoxs;
     checkBoxs.append(ui->chbMemoryTotalRAM);
     checkBoxs.append(ui->chbMemoryFreeRAM);
     checkBoxs.append(ui->chbMemoryRAMUsage);
@@ -93,12 +103,13 @@ void LogForm::initMemoryInfoCheckBoxs(const SystemInfo *info, int index)
     checkBoxs.append(ui->chbMemoryFreeSwap);
     checkBoxs.append(ui->chbMemorySwapUsage);
 
-    initSystemInfoCheckBoxs(info, index, checkBoxs);
+    initCheckedHistory(checkBoxs, checkBoxHistorys.historys);
 }
 
-void LogForm::initNetworkInfoCheckBoxs(const SystemInfo *info, int index)
+void LogForm::initNetworkInfoCheckBoxs()
 {
-    QVector<QCheckBox*> checkBoxs;
+    CheckBoxHistorys &checkBoxHistorys = mCheckBoxHistorysVec[INDEX_NETWORK_INFO];
+    QVector<QCheckBox*> &checkBoxs = checkBoxHistorys.checkBoxs;
     checkBoxs.append(ui->chbNetRecvBytes);
     checkBoxs.append(ui->chbNetRecvPackets);
     checkBoxs.append(ui->chbNetRecvErrors);
@@ -115,12 +126,13 @@ void LogForm::initNetworkInfoCheckBoxs(const SystemInfo *info, int index)
     checkBoxs.append(ui->chbNetSentErrorRate);
     checkBoxs.append(ui->chbNetSentDropRate);
 
-    initSystemInfoCheckBoxs(info, index, checkBoxs);
+    initCheckedHistory(checkBoxs, checkBoxHistorys.historys);
 }
 
-void LogForm::initFileSystemInfoCheckBoxs(const SystemInfo *info, int index)
+void LogForm::initFileSystemInfoCheckBoxs()
 {
-    QVector<QCheckBox*> checkBoxs;
+    CheckBoxHistorys &checkBoxHistorys = mCheckBoxHistorysVec[INDEX_FILESYSTEM_INFO];
+    QVector<QCheckBox*> &checkBoxs = checkBoxHistorys.checkBoxs;
     checkBoxs.append(ui->chbFSIsMounted);
     checkBoxs.append(ui->chbFSDeviceName);
     checkBoxs.append(ui->chbFSMountDir);
@@ -134,51 +146,77 @@ void LogForm::initFileSystemInfoCheckBoxs(const SystemInfo *info, int index)
     checkBoxs.append(ui->chbFSLabel);
     checkBoxs.append(ui->chbFSUuid);
 
-    initSystemInfoCheckBoxs(info, index, checkBoxs);
+    initCheckedHistory(checkBoxs, checkBoxHistorys.historys);
 }
 
-void LogForm::initSystemInfoCheckBoxs(const SystemInfo *info, int index,
-    const QVector<QCheckBox*> &checkBoxs)
+void LogForm::initCheckedHistory(const QVector<QCheckBox*> &checkBoxs,
+                                 QVector<bool> &historys)
 {
-    SysInfoCheckBox &sysInfoCheckBox = mSysInfoCheckBoxs[index];
-    sysInfoCheckBox.sysInfo = info;
-    sysInfoCheckBox.checkBoxs = checkBoxs;
-
     for (int i = 0; i < checkBoxs.size(); ++i)
     {
         QCheckBox *checkBox = checkBoxs[i];
-        connect(checkBox, SIGNAL(toggled(bool)), this, SLOT(toggleCheckBox(bool)));
-        sysInfoCheckBox.checkedHistorys.append(checkBox->isChecked());
-        if (checkBox->isChecked())
+        if (checkBox != NULL)
         {
-            mLogWorker->addFilterToSystemInfo(info, i);
+            historys.append(checkBox->isChecked());
+        }
+        else
+        {
+            historys.append(false);
         }
     }
 }
 
 void LogForm::toggleCheckBox(bool checked)
 {
-    for (int i = 0; i < mSysInfoCheckBoxs.size(); ++i)
+    for (int i = 0; i < mCheckBoxHistorysVec.size(); ++i)
     {
-        SysInfoCheckBox &sysInfoCheckBox = mSysInfoCheckBoxs[i];
-        for (int j = 0; j < sysInfoCheckBox.checkBoxs.size(); ++j)
+        CheckBoxHistorys &checkBoxHistorys = mCheckBoxHistorysVec[i];
+        for (int j = 0; j < checkBoxHistorys.checkBoxs.size(); ++j)
         {
-            bool isChecked = sysInfoCheckBox.checkBoxs[j]->isChecked();
-            if (isChecked != sysInfoCheckBox.checkedHistorys[j])
+            bool isChecked = checkBoxHistorys.checkBoxs[j]->isChecked();
+            if (isChecked != checkBoxHistorys.historys[j])
             {
                 if (isChecked)
                 {
-                    mLogWorker->addFilterToSystemInfo(sysInfoCheckBox.sysInfo, (char)j);
+                    mLogWorker->addFilterToSystemInfo(getSystemInfo(i), (char)j);
                 }
                 else
                 {
-                    mLogWorker->removeFilterFromSystemInfo(sysInfoCheckBox.sysInfo, (char)j);
+                    mLogWorker->removeFilterFromSystemInfo(getSystemInfo(i), (char)j);
                 }
-                sysInfoCheckBox.checkedHistorys[j] = isChecked;
+                checkBoxHistorys.historys[j] = isChecked;
                 return;
             }
         }
     }
+}
+
+const SystemInfo* LogForm::getSystemInfo(int index)
+{
+    const SystemInfo *systemInfo = NULL;
+    switch (index)
+    {
+    case INDEX_BASE_INFO:
+        systemInfo = InfoProvider::getInstance()->getBaseInfo();
+        break;
+    case INDEX_PROCESS_INFO:
+        systemInfo = InfoProvider::getInstance()->getProcessInfo();
+        break;
+    case INDEX_CPU_INFO:
+        systemInfo = InfoProvider::getInstance()->getCPUInfo();
+        break;
+    case INDEX_MEMORY_INFO:
+        systemInfo = InfoProvider::getInstance()->getMemoryInfo();
+        break;
+    case INDEX_NETWORK_INFO:
+        systemInfo = InfoProvider::getInstance()->getNetworkInfo();
+        break;
+    case INDEX_FILESYSTEM_INFO:
+        systemInfo = InfoProvider::getInstance()->getFileSystemInfo();
+    default:
+        break;
+    }
+    return systemInfo;
 }
 
 void LogForm::registerAllToLog()
@@ -193,46 +231,61 @@ void LogForm::registerAllToLog()
 
 void LogForm::registerBaseInfo(bool checked)
 {
-    registerToLog(checked, InfoProvider::getInstance()->getBaseInfo(),
-                  tr("baseinfo.log"));
+    registerToLog(checked, getSystemInfo(INDEX_BASE_INFO),
+                  tr("baseinfo.log"),
+                  mCheckBoxHistorysVec[INDEX_BASE_INFO]);
 }
 
 void LogForm::registerProcessInfo(bool checked)
 {
-    registerToLog(checked, InfoProvider::getInstance()->getProcessInfo(),
-                  tr("processinfo.log"));
+    registerToLog(checked, getSystemInfo(INDEX_PROCESS_INFO),
+                  tr("processinfo.log"),
+                  mCheckBoxHistorysVec[INDEX_PROCESS_INFO]);
 }
 
 void LogForm::registerCPUInfo(bool checked)
 {
-    registerToLog(checked, InfoProvider::getInstance()->getCPUInfo(),
-                  tr("cpuinfo.log"));
+    registerToLog(checked, getSystemInfo(INDEX_CPU_INFO),
+                  tr("cpuinfo.log"),
+                  mCheckBoxHistorysVec[INDEX_CPU_INFO]);
 }
 
 void LogForm::registerMemoryInfo(bool checked)
 {
-    registerToLog(checked, InfoProvider::getInstance()->getMemoryInfo(),
-                  tr("memoryinfo.log"));
+    registerToLog(checked, getSystemInfo(INDEX_MEMORY_INFO),
+                  tr("memoryinfo.log"),
+                  mCheckBoxHistorysVec[INDEX_MEMORY_INFO]);
 }
 
 void LogForm::registerNetworkInfo(bool checked)
 {
-    registerToLog(checked, InfoProvider::getInstance()->getNetworkInfo(),
-                  tr("networkinfo.log"));
+    registerToLog(checked, getSystemInfo(INDEX_NETWORK_INFO),
+                  tr("networkinfo.log"),
+                  mCheckBoxHistorysVec[INDEX_NETWORK_INFO]);
 }
 
 void LogForm::registerFileSystemInfo(bool checked)
 {
-    registerToLog(checked, InfoProvider::getInstance()->getFileSystemInfo(),
-                  tr("filesysteminfo.log"));
+    registerToLog(checked, getSystemInfo(INDEX_FILESYSTEM_INFO),
+                  tr("filesysteminfo.log"),
+                  mCheckBoxHistorysVec[INDEX_FILESYSTEM_INFO]);
 }
 
-void LogForm::registerToLog(bool checked, const SystemInfo *info,
-    const QString &logFileName)
+void LogForm::registerToLog(bool checked,
+    const SystemInfo *info, const QString &logFileName,
+    const CheckBoxHistorys &checkBoxHistorys)
 {
     if (checked)
     {
         mLogWorker->addToWorker(info, logFileName);
+        const QVector<bool> &historys = checkBoxHistorys.historys;
+        for (int i = 0; i < historys.size(); ++i)
+        {
+            if (historys[i])
+            {
+                mLogWorker->addFilterToSystemInfo(info, (char)i);
+            }
+        }
     }
     else
     {
@@ -258,6 +311,16 @@ void LogForm::makeConnection()
             this, SLOT(registerNetworkInfo(bool)));
     connect(ui->gbFileSystemInfo, SIGNAL(toggled(bool)),
             this, SLOT(registerFileSystemInfo(bool)));
+
+    for (int i = 0; i < mCheckBoxHistorysVec.size(); ++i)
+    {
+        QVector<QCheckBox*> &checkBoxs = mCheckBoxHistorysVec[i].checkBoxs;
+        for (int j = 0; j < checkBoxs.size(); ++j)
+        {
+            connect(checkBoxs[j], SIGNAL(toggled(bool)),
+                    this, SLOT(toggleCheckBox(bool)));
+        }
+    }
 }
 
 void LogForm::toggleLogWorker(bool start)

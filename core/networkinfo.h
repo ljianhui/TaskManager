@@ -74,7 +74,6 @@ class NetworkInfo : public SystemInfo
 
 	private: // function
 		void refreshData();
-		time_t getBootTime()const;
 		bool readRecord(const char *buffer, Interface &record);
 		void addAssign(const Interface &src, Interface &dst);
 		void getIncrement(const Interface &x, const Interface &y,

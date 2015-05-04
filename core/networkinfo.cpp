@@ -1,6 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "networkinfo.h"
+#include "baseinfo.h"
 #include "filehelper.h"
 #include "utils.h"
 
@@ -57,30 +58,8 @@ NetworkInfo::NetworkInfo():
 	mRecord(new Interface),
 	mIncrement(new Interface)
 {
-	mRecord->time = getBootTime();
+	mRecord->time = BaseInfo::getBootTime();
 	refreshData();
-}
-
-time_t NetworkInfo::getBootTime()const
-{
-	static time_t bootTime = 0;
-	if (bootTime == 0)
-	{
-		FileHelper file("/proc/uptime", "r");
-		if (!file.isOpened())
-		{
-			return 0;
-		}
-		float uptime = 0;
-		char buffer[128] = {0};
-		file.readLine(buffer, sizeof(buffer));
-		int num = sscanf(buffer, "%f %*f", &uptime);
-		if (num == 1)
-		{
-			bootTime = time(NULL) - (time_t)(uptime + 0.5);
-		}
-	}
-	return bootTime;
 }
 
 NetworkInfo::NetworkInfo(const NetworkInfo &other):
@@ -226,8 +205,14 @@ string NetworkInfo::toString(const vector<char> &filter)const
 	initFilterFlags(filterFlags, size, filter);
 
 	string txt;
+	bool newLine = true;
 	for (int i = 0; i < size; ++i)
 	{
+		if (i == size / 2)
+		{
+			txt += "\n";
+			newLine = true;
+		}
 		if (!filterFlags[i])
 		{
 			continue;
@@ -236,8 +221,12 @@ string NetworkInfo::toString(const vector<char> &filter)const
 		const string &nameValue = getNameValue(i);
 		if (nameValue != INVALID_NAME)
 		{
+			if (!newLine)
+			{
+				txt += ", ";
+			}
 			txt += nameValue;
-			txt += "\n";
+			newLine = false;
 		}
 	}
 	txt += "\n";

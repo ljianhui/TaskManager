@@ -92,7 +92,7 @@ void ProcessInfoForm::initConnection()
     connect(ui->tbvProcesses, SIGNAL(customContextMenuRequested(QPoint)),
             this, SLOT(showMenu(QPoint)));
     connect(ui->tbvProcesses, SIGNAL(clicked(QModelIndex)),
-            this, SLOT(setCurIndex(QModelIndex)));
+            this, SLOT(setCurProcess(QModelIndex)));
     connect(ui->tbvProcesses, SIGNAL(pressed(QModelIndex)),
             this, SLOT(setCurProcess(QModelIndex)));
 

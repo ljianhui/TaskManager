@@ -13,6 +13,8 @@ class BaseInfo : public SystemInfo
 		BaseInfo& operator=(const BaseInfo &other);
 		virtual ~BaseInfo();
 
+		static time_t getBootTime();
+
 		std::string getUserName()const;
 		uid_t getUserId()const;
 		std::string getSystemName()const;
