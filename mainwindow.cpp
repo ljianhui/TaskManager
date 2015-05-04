@@ -12,12 +12,12 @@
 #include "filesysteminfoform.h"
 #include "logform.h"
 
-#include "infoprovider.h"
+#include "systeminfoprovider.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
-    mInfoProvider(InfoProvider::getInstance()),
+    mSystemInfoProvider(SystemInfoProvider::getInstance()),
     mBaseInfoForm(new BaseInfoForm),
     mProcessInfoForm(new ProcessInfoForm),
     mResourceForm(new ResourcesForm),
@@ -33,7 +33,7 @@ MainWindow::MainWindow(QWidget *parent) :
     setForm(index++, mFileSystemInfoForm);
     setForm(index++, mLogForm);
 
-    connect(mInfoProvider, SIGNAL(finishUpdate()), this, SLOT(refreshTabs()));
+    connect(mSystemInfoProvider, SIGNAL(finishUpdate()), this, SLOT(refreshTabs()));
 }
 
 MainWindow::~MainWindow()
@@ -46,7 +46,7 @@ MainWindow::~MainWindow()
     delete mProcessInfoForm;
     delete mBaseInfoForm;
 
-    delete mInfoProvider;
+    delete mSystemInfoProvider;
 }
 
 void MainWindow::setForm(int index, QWidget *form)

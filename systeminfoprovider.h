@@ -1,5 +1,5 @@
-#ifndef INFOPROVIDER_H
-#define INFOPROVIDER_H
+#ifndef SYSTEMINFOPROVIDER_H
+#define SYSTEMINFOPROVIDER_H
 
 #include <QThread>
 #include <QReadWriteLock>
@@ -11,12 +11,12 @@ class MemoryInfo;
 class NetworkInfo;
 class FileSystemInfo;
 
-class InfoProvider : public QThread
+class SystemInfoProvider : public QThread
 {
     Q_OBJECT
 public:
-    static InfoProvider* getInstance();
-    ~InfoProvider();
+    static SystemInfoProvider* getInstance();
+    ~SystemInfoProvider();
 
     const BaseInfo* getBaseInfo()const;
     const ProcessInfo* getProcessInfo()const;
@@ -43,10 +43,10 @@ protected:
     void run();
 
 private:
-    InfoProvider();
+    SystemInfoProvider();
 
 private:
-    static InfoProvider *sInstance;
+    static SystemInfoProvider *sInstance;
 
     BaseInfo *mBaseInfo;
     ProcessInfo *mProcessInfo;
@@ -58,4 +58,4 @@ private:
     bool mRun;
 };
 
-#endif // INFOPROVIDER_H
+#endif // SYSTEMINFOPROVIDER_H

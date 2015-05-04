@@ -5,7 +5,7 @@
 #include "ui_logform.h"
 
 #include "logworker.h"
-#include "infoprovider.h"
+#include "systeminfoprovider.h"
 
 #include "log.h"
 #include "baseinfo.h"
@@ -197,22 +197,22 @@ const SystemInfo* LogForm::getSystemInfo(int index)
     switch (index)
     {
     case INDEX_BASE_INFO:
-        systemInfo = InfoProvider::getInstance()->getBaseInfo();
+        systemInfo = SystemInfoProvider::getInstance()->getBaseInfo();
         break;
     case INDEX_PROCESS_INFO:
-        systemInfo = InfoProvider::getInstance()->getProcessInfo();
+        systemInfo = SystemInfoProvider::getInstance()->getProcessInfo();
         break;
     case INDEX_CPU_INFO:
-        systemInfo = InfoProvider::getInstance()->getCPUInfo();
+        systemInfo = SystemInfoProvider::getInstance()->getCPUInfo();
         break;
     case INDEX_MEMORY_INFO:
-        systemInfo = InfoProvider::getInstance()->getMemoryInfo();
+        systemInfo = SystemInfoProvider::getInstance()->getMemoryInfo();
         break;
     case INDEX_NETWORK_INFO:
-        systemInfo = InfoProvider::getInstance()->getNetworkInfo();
+        systemInfo = SystemInfoProvider::getInstance()->getNetworkInfo();
         break;
     case INDEX_FILESYSTEM_INFO:
-        systemInfo = InfoProvider::getInstance()->getFileSystemInfo();
+        systemInfo = SystemInfoProvider::getInstance()->getFileSystemInfo();
     default:
         break;
     }

@@ -5,7 +5,7 @@
 #include "publicreadwritelock.h"
 
 #include "tableviewhelper.h"
-#include "infoprovider.h"
+#include "systeminfoprovider.h"
 #include "cpuinfo.h"
 #include "cpu.h"
 #include "memoryinfo.h"
@@ -21,9 +21,9 @@ ResourcesForm::ResourcesForm(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    mCPUInfo = InfoProvider::getInstance()->getCPUInfo();
-    mMemoryInfo = InfoProvider::getInstance()->getMemoryInfo();
-    mNetworkInfo = InfoProvider::getInstance()->getNetworkInfo();
+    mCPUInfo = SystemInfoProvider::getInstance()->getCPUInfo();
+    mMemoryInfo = SystemInfoProvider::getInstance()->getMemoryInfo();
+    mNetworkInfo = SystemInfoProvider::getInstance()->getNetworkInfo();
 
     initCPUTableView();
     initMemoryProgressBars();

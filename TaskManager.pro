@@ -37,9 +37,9 @@ SOURCES += main.cpp\
     core/utils.cpp \
     prioritysettingdialog.cpp \
     tableviewhelper.cpp \
-    infoprovider.cpp \
     publicreadwritelock.cpp \
-    logworker.cpp
+    logworker.cpp \
+    systeminfoprovider.cpp
 
 HEADERS  += mainwindow.h \
     baseinfoform.h \
@@ -64,9 +64,9 @@ HEADERS  += mainwindow.h \
     core/utils.h \
     prioritysettingdialog.h \
     tableviewhelper.h \
-    infoprovider.h \
     publicreadwritelock.h \
-    logworker.h
+    logworker.h \
+    systeminfoprovider.h
 
 FORMS    += mainwindow.ui \
     baseinfoform.ui \

@@ -4,7 +4,7 @@
 #include "publicreadwritelock.h"
 
 #include "baseinfo.h"
-#include "infoprovider.h"
+#include "systeminfoprovider.h"
 #include "utils.h"
 
 BaseInfoForm::BaseInfoForm(QWidget *parent) :
@@ -13,7 +13,7 @@ BaseInfoForm::BaseInfoForm(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    mBaseInfo = InfoProvider::getInstance()->getBaseInfo();
+    mBaseInfo = SystemInfoProvider::getInstance()->getBaseInfo();
     refreshViews();
 }
 

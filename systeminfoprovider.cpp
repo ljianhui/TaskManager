@@ -4,7 +4,7 @@
 
 #include <sys/types.h>
 
-#include "infoprovider.h"
+#include "systeminfoprovider.h"
 #include "publicreadwritelock.h"
 
 #include "baseinfo.h"
@@ -14,9 +14,9 @@
 #include "networkinfo.h"
 #include "filesysteminfo.h"
 
-InfoProvider* InfoProvider::sInstance(NULL);
+SystemInfoProvider* SystemInfoProvider::sInstance(NULL);
 
-InfoProvider* InfoProvider::getInstance()
+SystemInfoProvider* SystemInfoProvider::getInstance()
 {
     static QMutex mutex;
     if (sInstance == NULL)
@@ -24,43 +24,43 @@ InfoProvider* InfoProvider::getInstance()
         QMutexLocker locker(&mutex);
         if (sInstance == NULL)
         {
-            sInstance = new InfoProvider;
+            sInstance = new SystemInfoProvider;
         }
     }
     return sInstance;
 }
 
-const BaseInfo* InfoProvider::getBaseInfo()const
+const BaseInfo* SystemInfoProvider::getBaseInfo()const
 {
     return mBaseInfo;
 }
 
-const ProcessInfo* InfoProvider::getProcessInfo()const
+const ProcessInfo* SystemInfoProvider::getProcessInfo()const
 {
     return mProcessInfo;
 }
 
-const CPUInfo* InfoProvider::getCPUInfo()const
+const CPUInfo* SystemInfoProvider::getCPUInfo()const
 {
     return mCPUInfo;
 }
 
-const MemoryInfo* InfoProvider::getMemoryInfo()const
+const MemoryInfo* SystemInfoProvider::getMemoryInfo()const
 {
     return mMemoryInfo;
 }
 
-const NetworkInfo* InfoProvider::getNetworkInfo()const
+const NetworkInfo* SystemInfoProvider::getNetworkInfo()const
 {
     return mNetworkInfo;
 }
 
-const FileSystemInfo* InfoProvider::getFileSystemInfo()const
+const FileSystemInfo* SystemInfoProvider::getFileSystemInfo()const
 {
     return mFileSystemInfo;
 }
 
-void InfoProvider::sortProcessesByPid()
+void SystemInfoProvider::sortProcessesByPid()
 {
     {
     QWriteLocker locker(PublicReadWriteLock::getLock());
@@ -69,7 +69,7 @@ void InfoProvider::sortProcessesByPid()
     emit resort();
 }
 
-void InfoProvider::sortProcessesByName()
+void SystemInfoProvider::sortProcessesByName()
 {
     {
     QWriteLocker locker(PublicReadWriteLock::getLock());
@@ -78,7 +78,7 @@ void InfoProvider::sortProcessesByName()
     emit resort();
 }
 
-void InfoProvider::sortProcessesByMemory()
+void SystemInfoProvider::sortProcessesByMemory()
 {
     {
     QWriteLocker locker(PublicReadWriteLock::getLock());
@@ -87,7 +87,7 @@ void InfoProvider::sortProcessesByMemory()
     emit resort();
 }
 
-void InfoProvider::sortProcessesByCPUOccupyRate()
+void SystemInfoProvider::sortProcessesByCPUOccupyRate()
 {
     {
     QWriteLocker locker(PublicReadWriteLock::getLock());
@@ -96,7 +96,7 @@ void InfoProvider::sortProcessesByCPUOccupyRate()
     emit resort();
 }
 
-void InfoProvider::sortProcessesByUserName()
+void SystemInfoProvider::sortProcessesByUserName()
 {
     {
     QWriteLocker locker(PublicReadWriteLock::getLock());
@@ -105,7 +105,7 @@ void InfoProvider::sortProcessesByUserName()
     emit resort();
 }
 
-void InfoProvider::sortProcessesByPriority()
+void SystemInfoProvider::sortProcessesByPriority()
 {
     {
     QWriteLocker locker(PublicReadWriteLock::getLock());
@@ -114,7 +114,7 @@ void InfoProvider::sortProcessesByPriority()
     emit resort();
 }
 
-void InfoProvider::resetProcessUserFilter(uid_t uid)
+void SystemInfoProvider::resetProcessUserFilter(uid_t uid)
 {
     {
     QWriteLocker locker(PublicReadWriteLock::getLock());
@@ -124,7 +124,7 @@ void InfoProvider::resetProcessUserFilter(uid_t uid)
     emit resetUserFilter();
 }
 
-void InfoProvider::run()
+void SystemInfoProvider::run()
 {
     while (mRun)
     {
@@ -160,7 +160,7 @@ void InfoProvider::run()
     }
 }
 
-InfoProvider::InfoProvider():
+SystemInfoProvider::SystemInfoProvider():
     mBaseInfo(new BaseInfo()),
     mProcessInfo(new ProcessInfo()),
     mCPUInfo(new CPUInfo()),
@@ -172,7 +172,7 @@ InfoProvider::InfoProvider():
     start();
 }
 
-InfoProvider::~InfoProvider()
+SystemInfoProvider::~SystemInfoProvider()
 {
     {
         QWriteLocker locker(PublicReadWriteLock::getLock());
@@ -192,4 +192,3 @@ InfoProvider::~InfoProvider()
     }
     wait();
 }
-

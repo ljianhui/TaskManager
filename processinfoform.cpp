@@ -13,7 +13,7 @@
 
 #include "prioritysettingdialog.h"
 #include "tableviewhelper.h"
-#include "infoprovider.h"
+#include "systeminfoprovider.h"
 #include "processinfo.h"
 #include "processmanager.h"
 #include "process.h"
@@ -29,7 +29,7 @@ ProcessInfoForm::ProcessInfoForm(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    mProcessInfo = InfoProvider::getInstance()->getProcessInfo();
+    mProcessInfo = SystemInfoProvider::getInstance()->getProcessInfo();
 
     ui->rdoAllProcess->setChecked(true);
     initTableView();
@@ -96,9 +96,9 @@ void ProcessInfoForm::initConnection()
     connect(ui->tbvProcesses, SIGNAL(pressed(QModelIndex)),
             this, SLOT(setCurProcess(QModelIndex)));
 
-    connect(InfoProvider::getInstance(), SIGNAL(resort()),
+    connect(SystemInfoProvider::getInstance(), SIGNAL(resort()),
             this, SLOT(refreshViews()));
-    connect(InfoProvider::getInstance(), SIGNAL(resetUserFilter()),
+    connect(SystemInfoProvider::getInstance(), SIGNAL(resetUserFilter()),
             this, SLOT(refreshViews()));
 }
 
@@ -139,7 +139,7 @@ void ProcessInfoForm::showAllProcess(bool isShowAllProcess)
 {
     if (isShowAllProcess)
     {
-        InfoProvider::getInstance()->resetProcessUserFilter(-1);
+        SystemInfoProvider::getInstance()->resetProcessUserFilter(-1);
     }
 }
 
@@ -147,7 +147,7 @@ void ProcessInfoForm::showMyProcess(bool isShowMyProcess)
 {
     if (isShowMyProcess)
     {
-        InfoProvider::getInstance()->resetProcessUserFilter(getuid());
+        SystemInfoProvider::getInstance()->resetProcessUserFilter(getuid());
     }
 }
 
@@ -156,24 +156,24 @@ void ProcessInfoForm::sortProcess(int index)
     switch (index)
     {
     case 0:
-        InfoProvider::getInstance()->sortProcessesByPid();
+        SystemInfoProvider::getInstance()->sortProcessesByPid();
         break;
     case 1:
-        InfoProvider::getInstance()->sortProcessesByName();
+        SystemInfoProvider::getInstance()->sortProcessesByName();
         break;
     case 3:
     case 4:
-        InfoProvider::getInstance()->sortProcessesByMemory();
+        SystemInfoProvider::getInstance()->sortProcessesByMemory();
         break;
     case 5:
-        InfoProvider::getInstance()->sortProcessesByCPUOccupyRate();
+        SystemInfoProvider::getInstance()->sortProcessesByCPUOccupyRate();
         break;
     case 6:
-        InfoProvider::getInstance()->sortProcessesByUserName();
+        SystemInfoProvider::getInstance()->sortProcessesByUserName();
         break;
     case 7:
     case 8:
-        InfoProvider::getInstance()->sortProcessesByPriority();
+        SystemInfoProvider::getInstance()->sortProcessesByPriority();
         break;
     default:;
     }

@@ -5,7 +5,7 @@
 #include "publicreadwritelock.h"
 
 #include "tableviewhelper.h"
-#include "infoprovider.h"
+#include "systeminfoprovider.h"
 #include "filesysteminfo.h"
 #include "filesystem.h"
 #include "utils.h"
@@ -17,7 +17,7 @@ FileSystemInfoForm::FileSystemInfoForm(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    mFileSystemInfo = InfoProvider::getInstance()->getFileSystemInfo();
+    mFileSystemInfo = SystemInfoProvider::getInstance()->getFileSystemInfo();
 
     initTableView();
     refreshViews();

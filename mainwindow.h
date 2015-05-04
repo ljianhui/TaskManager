@@ -13,7 +13,7 @@ class ResourcesForm;
 class FileSystemInfoForm;
 class LogForm;
 
-class InfoProvider;
+class SystemInfoProvider;
 
 class MainWindow : public QMainWindow
 {
@@ -32,7 +32,7 @@ private: // function
 private:
     Ui::MainWindow *ui;
 
-    InfoProvider *mInfoProvider;
+    SystemInfoProvider *mSystemInfoProvider;
 
     BaseInfoForm *mBaseInfoForm;
     ProcessInfoForm *mProcessInfoForm;
