@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <sys/types.h>
 #include <string>
+#include "memoryinfo.h"
 
 class ProcessInfo;
 
@@ -36,7 +37,6 @@ class Process
 
 		void refreshData();
 		
-		unsigned long getTotalMemory()const;
 		int getPageSize()const;
 
 		std::string pidToDir()const;
@@ -131,7 +131,7 @@ float Process::getCPUOccupyRate()const
 
 float Process::getMemoryOccupyRate()const
 {
-	unsigned long totalMemory = getTotalMemory();
+	unsigned long totalMemory = MemoryInfo::getTotalRAM();
 	if (totalMemory == 0)
 		return 0;
 	return (float)mMemory / (float)totalMemory;

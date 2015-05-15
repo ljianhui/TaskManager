@@ -136,18 +136,4 @@ int Process::getPageSize()const
 	return pageSize;
 }
 
-unsigned long Process::getTotalMemory()const
-{
-	static unsigned long totalMemory = 0;
-	if (totalMemory == 0)
-	{
-		struct sysinfo info;
-		int res = sysinfo(&info);
-		if (!res)
-		{
-			totalMemory = info.totalram;
-		}
-	}
-	return totalMemory;
-}
 
