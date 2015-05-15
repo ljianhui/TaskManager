@@ -26,7 +26,7 @@ LogForm::LogForm(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::LogForm),
     mCheckBoxHistorysVec(6),
-    mLogWorker(new LogWorker())
+    mLogWorker(LogWorker::getInstance())
 {
     ui->setupUi(this);
 

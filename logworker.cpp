@@ -5,6 +5,22 @@
 #include "publicreadwritelock.h"
 #include "log.h"
 
+LogWorker* LogWorker::sInstance(NULL);
+
+LogWorker* LogWorker::getInstance()
+{
+    if (sInstance == NULL)
+    {
+        static QMutex mutex;
+        QMutexLocker locker(&mutex);
+        if (sInstance == NULL)
+        {
+            sInstance = new LogWorker();
+        }
+    }
+    return sInstance;
+}
+
 LogWorker::LogWorker():
     mSeconds(5),
     mMutex(),

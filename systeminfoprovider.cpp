@@ -18,9 +18,9 @@ SystemInfoProvider* SystemInfoProvider::sInstance(NULL);
 
 SystemInfoProvider* SystemInfoProvider::getInstance()
 {
-    static QMutex mutex;
     if (sInstance == NULL)
     {
+        static QMutex mutex;
         QMutexLocker locker(&mutex);
         if (sInstance == NULL)
         {

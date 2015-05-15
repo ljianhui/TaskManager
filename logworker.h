@@ -10,7 +10,7 @@ class SystemInfo;
 class LogWorker : public QThread
 {
 public:
-    LogWorker();
+    static LogWorker* getInstance();
     ~LogWorker();
 
     void stopWorker();
@@ -27,7 +27,12 @@ public:
 protected:
     void run();
 
-private:
+private: // function
+    LogWorker();
+
+private: // data
+    static LogWorker *sInstance;
+
     unsigned long mSeconds;
     QMutex mMutex;
     Log *mLog;

@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <sys/utsname.h>
 #include <sys/types.h>
+#include <sys/sysinfo.h>
 #include <time.h>
 #include "baseinfo.h"
-#include "filehelper.h"
 #include "utils.h"
 
 using std::vector;
@@ -76,18 +76,11 @@ time_t BaseInfo::getBootTime()
 	static time_t bootTime = 0;
 	if (bootTime == 0)
 	{
-		FileHelper file("/proc/uptime", "r");
-		if (!file.isOpened())
+		struct sysinfo info;
+		int res = sysinfo(&info);
+		if (!res)
 		{
-			return 0;
-		}
-		float uptime = 0;
-		char buffer[128] = {0};
-		file.readLine(buffer, sizeof(buffer));
-		int num = sscanf(buffer, "%f %*f", &uptime);
-		if (num == 1)
-		{
-			bootTime = time(NULL) - (time_t)(uptime + 0.5);
+			bootTime = time(NULL) - info.uptime;
 		}
 	}
 	return bootTime;
