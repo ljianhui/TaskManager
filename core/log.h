@@ -43,6 +43,7 @@ class Log : public Singleton<Log>
 			const_iterator it, const std::string &dir)const;
 		std::string getDir()const;
 		bool isDirExist(const char *dir)const;
+		void mkdirLog()const;
 
 	private: // data
 		std::map<const SystemInfo*, FileFilter> mInfoFilterMap; 

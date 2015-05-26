@@ -28,11 +28,7 @@ Log::FileFilter::FileFilter(const string &fname,
 Log::Log():
 	mInfoFilterMap()
 {
-	if (!isDirExist("./log/"))
-	{
-		mkdir("./log/",S_IRUSR|S_IWUSR|S_IXUSR|
-			S_IRGRP|S_IWGRP|S_IXGRP|S_IROTH|S_IXOTH);
-	}
+	mkdirLog();
 }
 
 Log::Log(const Log &other):
@@ -114,14 +110,7 @@ void Log::log(map<const SystemInfo*, FileFilter>::const_iterator it,
 	}
 
 	file.write(LocalTime() + "\n");
-	if (fileFilter.filter.empty())
-	{
-		file.write(it->first->toString());
-	}
-	else
-	{
-		file.write(it->first->toString(fileFilter.filter));
-	}
+	file.write(it->first->toString(fileFilter.filter));
 }
 
 void Log::logAll()const
@@ -137,8 +126,9 @@ void Log::logAll()const
 
 string Log::getDir()const
 {
+	mkdirLog();
+	
 	static string dir("");
-
 	if (dir != "" && isDirExist(dir.c_str()))
 	{
 		return dir;
@@ -170,3 +160,11 @@ bool Log::isDirExist(const char *dir)const
 	return access(dir, 0) == 0;
 }
 
+void Log::mkdirLog()const
+{
+	if (!isDirExist("./log/"))
+	{
+		mkdir("./log/",S_IRUSR|S_IWUSR|S_IXUSR|
+			S_IRGRP|S_IWGRP|S_IXGRP|S_IROTH|S_IXOTH);
+	}
+}
