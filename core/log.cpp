@@ -28,7 +28,6 @@ Log::FileFilter::FileFilter(const string &fname,
 Log::Log():
 	mInfoFilterMap()
 {
-	mkdirLog();
 }
 
 Log::Log(const Log &other):
