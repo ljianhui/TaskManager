@@ -43,11 +43,9 @@ const string ProcessInfo::NAMES[] = {
 };
 const size_t ProcessInfo::CACHESIZE(50);
 
-unsigned long long ProcessInfo::HistoryTime::sSeqNum(0);
-
 ProcessInfo::HistoryTime::HistoryTime():
 	time(0),
-	seqNum(sSeqNum)
+	seqNum(0)
 {
 }
 
@@ -57,6 +55,7 @@ ProcessInfo::ProcessInfo():
 	mUserIdFilter(-1),
 	mRecordTime(0.0),
 	mIterator(0),
+	mSeqNum(0),
 	mProcessVec(),
 	mCacheVec(),
 	mHistoryMap()
@@ -71,6 +70,7 @@ ProcessInfo::ProcessInfo(const ProcessInfo &other):
 	mUserIdFilter(other.mUserIdFilter),
 	mRecordTime(other.mRecordTime),
 	mIterator(0),
+	mSeqNum(0),
 	mProcessVec(other.mProcessVec.size(), NULL),
 	mCacheVec(),
 	mHistoryMap(other.mHistoryMap)
@@ -231,7 +231,7 @@ void ProcessInfo::refreshData()
 	if (procDir == NULL)
 		return;
 
-	++HistoryTime::sSeqNum;
+	++mSeqNum;
 
 	double curTime = getCurrentTime();
 	size_t i = 0;
@@ -301,7 +301,7 @@ void ProcessInfo::calculateCPUOccRate(Process *p, double curTime)
 	double cpuOccRate = (double)(diffCpuTime) / totalDiffCpuTime;
 	p->setCPUOccupyRate(cpuOccRate);
 	history.time = cpuTime;
-	history.seqNum = HistoryTime::sSeqNum;
+	history.seqNum = mSeqNum;
 }
 
 void ProcessInfo::clearClosedProcessHistory()
@@ -313,7 +313,7 @@ void ProcessInfo::clearClosedProcessHistory()
 	map<pid_t, HistoryTime>::iterator it = mHistoryMap.begin();
 	while (it != mHistoryMap.end())
 	{
-		if (it->second.seqNum != HistoryTime::sSeqNum)
+		if (it->second.seqNum != mSeqNum)
 		{
 			mHistoryMap.erase(it++);
 		}

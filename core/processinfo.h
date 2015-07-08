@@ -60,7 +60,6 @@ class ProcessInfo : public SystemInfo
 			HistoryTime();
 			unsigned long long time;
 			unsigned long long seqNum;
-			static unsigned long long sSeqNum;
 		};
 		
 	private: // function
@@ -91,6 +90,7 @@ class ProcessInfo : public SystemInfo
 		uid_t mUserIdFilter;
 		double mRecordTime;
 		mutable size_t mIterator;
+		unsigned long long mSeqNum;
 		std::vector<Process*> mProcessVec;
 		std::vector<Process*> mCacheVec;
 		std::map<pid_t, HistoryTime> mHistoryMap;
